@@ -20,6 +20,9 @@
  * @return  array
  */
 function cmw_set_walker($args) {
-    $args['walker'] = new CleanMenuWalker();
+    if (!is_admin() && empty($args['walker'])) {
+        $args['walker'] = new CleanMenuWalker();
+    }
+
     return $args;
 }
