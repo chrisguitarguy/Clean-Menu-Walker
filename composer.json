@@ -1,0 +1,16 @@
+{
+    "name": "chrisguitarguy/clean-menu-walker",
+    "description": "A WordPress menu walker implementation that doesn't attempt to indent and cleans up class names.",
+    "keywords": ["wordpress"],
+    "license": "MIT",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Christopher Davis",
+            "homepage": "http://christopherdavis.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    }
+}

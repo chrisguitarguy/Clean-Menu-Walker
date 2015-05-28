@@ -3,12 +3,12 @@
  * Plugin Name: Clean Menu Walker
  * Plugin URI: https://github.com/chrisguitarguy/Clean-Menu-Walker
  * Description: A walker implementation that doesn't attempt to indent and cleans up class names.
- * Version: 0.1
+ * Version: 1.0
  * Author: Christopher Davis
  * Author URI: http://christopherdavis.me
  * License: MIT
  *
- * Copyright (c) 2012 Christopher Davis <http://christopherdavis.me>
+ * Copyright (c) 2015 Christopher Davis <http://christopherdavis.me>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -31,13 +31,12 @@
  * @category    WordPress
  * @package     CleanMenuWalker
  * @author      Christopher Davis <http://christopherdavis.me>
- * @copyright   2012 Christopher Davis
  * @license     http://opensource.org/licenses/MIT MIT
  */
 
 !defined('ABSPATH') && exit;
 
-require dirname(__FILE__) . '/inc/CleanMenuWalker.php';
-require dirname(__FILE__) . '/inc/functions.php';
+require_once __DIR__.'/inc/CleanMenuWalker.php';
+require_once __DIR__.'/inc/functions.php';
 
 add_filter('wp_nav_menu_args', 'cmw_set_walker');
